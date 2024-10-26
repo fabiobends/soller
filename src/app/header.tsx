@@ -6,9 +6,7 @@ export function Header() {
   return (
     <nav className="absolute sm:relative flex items-center justify-between gap-4 sm:py-8 pt-4 sm:px-20 px-4">
       <div className="flex gap-10 items-center">
-        <Text variant="highlight" className="text-[2rem]">
-          soller
-        </Text>
+        <p className="text-[2rem] leading-small font-bold">soller</p>
         <ul className="hidden sm:flex items-center gap-4">
           <li>
             <Text variant="small">Products</Text>

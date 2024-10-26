@@ -3,6 +3,7 @@ interface TextProps extends React.HTMLAttributes<HTMLParagraphElement> {
   variant?:
     | "description"
     | "paragraph"
+    | "intro"
     | "small"
     | "heading"
     | "subheading"
@@ -21,7 +22,7 @@ export const Text = ({
       return (
         <h1
           {...props}
-          className={`text-7xl leading-small font-extrabold ${className}`}
+          className={`text-[2.5rem] sm:text-7xl leading-small font-extrabold ${className}`}
         >
           {children}
         </h1>
@@ -30,7 +31,7 @@ export const Text = ({
       return (
         <h2
           {...props}
-          className={`text-heading leading-small font-extrabold ${className}`}
+          className={`text-[2rem] sm:text-heading leading-small font-extrabold ${className}`}
         >
           {children}
         </h2>
@@ -39,7 +40,7 @@ export const Text = ({
       return (
         <h3
           {...props}
-          className={`text-2xl leading-small font-bold ${className}`}
+          className={`text-xl sm:text-2xl leading-small font-bold ${className}`}
         >
           {children}
         </h3>
@@ -48,20 +49,35 @@ export const Text = ({
       return (
         <h4
           {...props}
-          className={`text-xl leading-small text-secondary font-medium ${className}`}
+          className={`text-small sm:text-xl leading-small text-secondary font-medium ${className}`}
         >
           {children}
         </h4>
       );
     case "description":
       return (
-        <p {...props} className={`text-xl leading-large ${className}`}>
+        <p
+          {...props}
+          className={`text-small sm:text-xl leading-large ${className}`}
+        >
+          {children}
+        </p>
+      );
+    case "intro":
+      return (
+        <p
+          {...props}
+          className={`text-paragraph sm:text-2xl leading-medium ${className}`}
+        >
           {children}
         </p>
       );
     case "paragraph":
       return (
-        <p {...props} className={`text-paragraph leading-medium ${className}`}>
+        <p
+          {...props}
+          className={`text-small sm:text-paragraph leading-medium ${className}`}
+        >
           {children}
         </p>
       );

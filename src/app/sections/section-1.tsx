@@ -8,7 +8,7 @@ export function Section1() {
       <div className="flex flex-col sm:gap-32 gap-16 w-full max-w-[600px]">
         <div className="flex flex-col gap-6 items-center text-center sm:text-start sm:items-start">
           <Text variant="headline">Get the Sun to Power Your Home</Text>
-          <Text variant="highlight" className="font-normal leading-medium">
+          <Text variant="intro">
             Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra
             orci dui consequat turpis scelerisque.
           </Text>

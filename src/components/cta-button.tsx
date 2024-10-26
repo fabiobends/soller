@@ -21,9 +21,7 @@ export function CtaButton({ title, color = "purple", ...props }: Props) {
 
   return (
     <button {...props} className={className}>
-      <Text variant="highlight" className="text-center flex-1 leading-0">
-        {title}
-      </Text>
+      <p className="text-2xl font-bold text-center flex-1 leading-0">{title}</p>
       <Image
         src={`/assets/icons/arrow-right-${color}.svg`}
         alt="Arrow Right"

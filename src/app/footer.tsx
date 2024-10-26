@@ -14,7 +14,7 @@ export function Footer() {
             width={33}
             height={56}
           />
-          <Text variant="highlight">soller</Text>
+          <p className="text-2xl leading-small font-bold">soller</p>
         </Link>
         <Text variant="small">@ 2023 Soller, Inc. All rights reserved.</Text>
       </div>
