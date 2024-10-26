@@ -1,55 +1,18 @@
 "use client";
 import Image from "next/image";
-import { Text } from "./text";
 import { useState } from "react";
+import { Card, CardItem } from "./card";
 
-interface CardItemProps {
-  id: string;
-  name: string;
-  description: string;
-  body: string;
-  imageUrl: string;
-  isExpanded: boolean;
+interface CarrouselProps extends React.HTMLAttributes<HTMLDivElement> {
+  items: CardItem[];
 }
 
-export type Item = Omit<CardItemProps, "isExpanded">;
+const imageConfig = {
+  width: 24,
+  height: 24,
+};
 
-function CardItem({
-  name,
-  description,
-  body,
-  imageUrl,
-  isExpanded,
-}: CardItemProps) {
-  return (
-    <div
-      className={`px-8 pt-28 w-[364px] bg-white rounded-[10px] shadow-md flex flex-col justify-end gap-8 ${
-        isExpanded ? "h-[490px] pb-14" : "h-[442px] pb-8"
-      }`}
-    >
-      <Text>{body}</Text>
-      <div className="flex gap-4 items-center">
-        <Image
-          src={imageUrl}
-          alt={name}
-          height={64}
-          width={64}
-          className="rounded-full h-16 w-16 object-cover"
-        />
-        <div>
-          <Text>{name}</Text>
-          <Text variant="small">{description}</Text>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-interface CarrouselProps {
-  items: Item[];
-}
-
-export function Carrousel({ items }: CarrouselProps) {
+export function Carrousel({ items, ...props }: CarrouselProps) {
   const [data, setData] = useState(items);
 
   const onClickGoForward = () => {
@@ -71,15 +34,18 @@ export function Carrousel({ items }: CarrouselProps) {
   };
 
   return (
-    <div className="flex flex-col pl-20 gap-20">
-      <div className="grid grid-rows-1 overflow-x-hidden">
+    <div
+      {...props}
+      className={`flex flex-col gap-16 sm:gap-20 ${props.className}`}
+    >
+      <div className="grid grid-rows-1 overflow-x-hidden pl-8 sm:pl-20">
         <div className="flex items-center gap-6">
           {data.map((item, index) => (
-            <CardItem key={item.id} {...item} isExpanded={index === 0} />
+            <Card key={item.id} {...item} isExpanded={index === 0} />
           ))}
         </div>
       </div>
-      <div className="flex items-center gap-6">
+      <div className="flex items-center justify-center sm:justify-start gap-6 sm:pl-20">
         <button
           className="p-3 color-tertiary border-2 rounded-full border-tertiary"
           onClick={onClickGoBack}
@@ -87,8 +53,7 @@ export function Carrousel({ items }: CarrouselProps) {
           <Image
             src="/assets/icons/arrow-left-yellow.svg"
             alt="arrow-left"
-            width={24}
-            height={24}
+            {...imageConfig}
           />
         </button>
         <button
@@ -98,8 +63,7 @@ export function Carrousel({ items }: CarrouselProps) {
           <Image
             src="/assets/icons/arrow-right-yellow.svg"
             alt="arrow-left"
-            width={24}
-            height={24}
+            {...imageConfig}
           />
         </button>
       </div>

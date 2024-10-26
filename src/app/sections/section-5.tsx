@@ -1,8 +1,9 @@
-import { Item, Carrousel } from "@/components/carrousel";
+import { CardItem } from "@/components/card";
+import { Carrousel } from "@/components/carrousel";
 import { CtaButton } from "@/components/cta-button";
 import { Text } from "@/components/text";
 
-const items: Item[] = [
+const items: CardItem[] = [
   {
     id: "1",
     body: "Purus maecenas quis elit eu, aliquet. Tellus porttitor ut sollicitudin sit non fringilla. Quam nunc volutpat senectus neque eget amet pharetra, euismod. Tempus, nunc, molestie imperdiet curabitur commodo euismod.",
