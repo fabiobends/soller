@@ -3,25 +3,25 @@ import { Text } from "@/components/text";
 
 export function Section3() {
   return (
-    <section className="relative p-20 flex justify-between items-center gap-10">
-      <Image
-        src="/assets/images/purple-deformed-rectangle.svg"
-        alt=""
-        height={1001}
-        width={574}
-        priority
-        className="absolute left-0 w-3/12 -z-10"
-      />
-      <div className="w-3/12">
+    <section className="relative py-12 sm:p-20 sm:pl-0 flex flex-col-reverse sm:flex-row items-center gap-16">
+      <div className="sm:w-4/12 w-full relative flex items-center justify-center">
+        <Image
+          src="/assets/images/purple-deformed-rectangle.svg"
+          alt=""
+          height={1001}
+          width={574}
+          priority
+        />
         <Image
           src="/assets/images/mobile-app-1.svg"
-          alt=""
+          alt="Mobile app"
           height={950}
           width={460}
           priority
+          className="absolute w-11/12 left-10 sm:left-20"
         />
       </div>
-      <div className="flex-1 flex flex-col gap-12">
+      <div className="flex-1 px-4 sm:px-0 flex text-center sm:text-start flex-col gap-16 sm:gap-12">
         <div>
           <Text variant="subheading">Services</Text>
           <Text variant="heading" className="mb-6 mt-2">

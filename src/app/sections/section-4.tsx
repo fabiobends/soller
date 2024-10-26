@@ -3,16 +3,8 @@ import { Text } from "@/components/text";
 
 export function Section4() {
   return (
-    <section className="relative p-20 flex justify-between items-center gap-10">
-      <Image
-        src="/assets/images/yellow-deformed-rectangle.svg"
-        alt=""
-        height={1001}
-        width={574}
-        priority
-        className="absolute right-0 w-3/12 -z-10"
-      />
-      <div className="flex-1 flex flex-col gap-12">
+    <section className="relative py-12 sm:p-20 sm:pr-0 flex flex-col sm:flex-row gap-16">
+      <div className="flex-1 px-4 sm:px-0 flex text-center sm:text-start flex-col gap-16 sm:gap-12">
         <div>
           <Text variant="subheading">System features</Text>
           <Text variant="heading" className="mt-2 mb-6">
@@ -54,13 +46,21 @@ export function Section4() {
           </div>
         </div>
       </div>
-      <div className="w-3/12">
+      <div className="sm:w-4/12 w-full relative flex items-center justify-center">
+        <Image
+          src="/assets/images/yellow-deformed-rectangle.svg"
+          alt=""
+          height={1001}
+          width={574}
+          priority
+        />
         <Image
           src="/assets/images/mobile-app-2.svg"
-          alt=""
+          alt="Mobile app"
           height={950}
           width={460}
           priority
+          className="absolute w-11/12 right-0 sm:right-8"
         />
       </div>
     </section>

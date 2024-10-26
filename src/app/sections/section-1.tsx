@@ -4,9 +4,9 @@ import { CtaButton } from "@/components/cta-button";
 
 export function Section1() {
   return (
-    <section className="flex flex-col pb-16 pt-7 px-20">
-      <div className="flex flex-col gap-32 w-full max-w-[600px]">
-        <div className="flex flex-col gap-6 items-start">
+    <section className="flex flex-col py-12 sm:pb-16 sm:pt-7 px-4 sm:px-20">
+      <div className="flex flex-col sm:gap-32 gap-16 w-full max-w-[600px]">
+        <div className="flex flex-col gap-6 items-center text-center sm:text-start sm:items-start">
           <Text variant="headline">Get the Sun to Power Your Home</Text>
           <Text variant="highlight" className="font-normal leading-medium">
             Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra
