@@ -24,6 +24,14 @@ export default function Home() {
           priority
           className="w-4/5 sm:w-auto"
         />
+        <Image
+          src="/assets/images/small-drop.svg"
+          alt="Small Drop"
+          width={31}
+          height={20}
+          priority
+          className="absolute bottom-5 right-20 sm:top-32 sm:right-80 sm:w-auto"
+        />
       </div>
       <Header />
       <Main />

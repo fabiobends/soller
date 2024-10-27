@@ -54,7 +54,8 @@ export function Section3() {
               viverra parturient tristique nulla.
             </Text>
           </div>
-          <div className="pt-20 flex flex-col gap-4">
+          <div className="relative pt-20 flex flex-col items-center sm:items-start gap-4">
+            <div className="absolute sm:left-8 top-10 bg-light-purple h-[3px] w-[3px] rounded-full" />
             <Text variant="highlight">Non libero</Text>
             <Text>
               Platea arcu dapibus non magna cursus lectus id sollicitudin. Enim

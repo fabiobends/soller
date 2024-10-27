@@ -6,12 +6,20 @@ export function Section6() {
   return (
     <section className="bg-light-purple relative">
       <Image
-        src="/assets/images/light-purple-circle.svg"
-        alt=""
+        src="/assets/images/light-purple-circle-up.svg"
+        alt="Purple Circle"
         height={438}
         width={706}
         priority
         className="hidden sm:block absolute top-0 right-0 w-2/5"
+      />
+      <Image
+        src="/assets/images/light-purple-circle-down.svg"
+        alt="Purple Circle"
+        height={181}
+        width={191}
+        priority
+        className="sm:hidden absolute bottom-0 left-0 w-1/2"
       />
       <div className="py-12 sm:p-20 flex flex-col items-center pb-0">
         <div className="px-4 flex flex-col sm:flex-row w-full justify-between text-center sm:text-start z-10">

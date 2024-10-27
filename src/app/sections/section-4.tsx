@@ -37,7 +37,8 @@ export function Section4() {
               Blandit molestie ullamcorper hendrerit purus lorem vulputate.
             </Text>
           </div>
-          <div className="pt-20 flex flex-col gap-4">
+          <div className="relative pt-20 flex flex-col items-center sm:items-start gap-4">
+            <div className="absolute sm:left-8 top-10 bg-light-purple h-[3px] w-[3px] rounded-full" />
             <Text variant="highlight">Amet egestas</Text>
             <Text>
               Elementum, libero, lacus, vel ullamcorper at velit id. Malesuada
