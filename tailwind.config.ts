@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        normal:
+          "0 0 10px 0px rgba(0, 0, 0, 0.07), 0 20px 25px -5px rgba(0, 0, 0, 0.1)",
+      },
       colors: {
         primary: "#581C87",
         secondary: "#F59E0B",

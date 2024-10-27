@@ -22,7 +22,7 @@ export function Card({
 }: CardProps) {
   return (
     <div
-      className={`px-8 sm:w-[364px] w-[calc(100vw-2rem)] bg-white rounded-[10px] shadow-md flex flex-col justify-end gap-8 ${
+      className={`px-8 sm:w-[364px] w-[calc(100vw-2rem)] bg-white rounded-[10px] shadow-normal flex flex-col justify-end gap-8 ${
         isExpanded ? "h-[359px] sm:h-[490px] pb-8 sm:pb-14" : "h-[442px] pb-8"
       }`}
     >
