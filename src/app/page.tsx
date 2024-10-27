@@ -17,8 +17,8 @@ export default function Home() {
           className="absolute w-4/5 sm:w-auto"
         />
         <Image
-          src="/assets/images/drip.svg"
-          alt=""
+          src="/assets/images/drop.svg"
+          alt="Drop"
           width={673}
           height={694}
           priority
