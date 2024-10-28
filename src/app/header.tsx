@@ -25,7 +25,7 @@ export function Header() {
           </li>
         </ul>
       </div>
-      <ul className="flex items-center gap-4">
+      <div className="flex items-center gap-4">
         <div className="hidden md:flex items-center px-2 py-3">
           <Image
             src="/assets/icons/headset.svg"
@@ -41,7 +41,7 @@ export function Header() {
           </Text>
         </div>
         <CtaButton title="Request a Quote" className="hidden lg:flex" />
-      </ul>
+      </div>
     </nav>
   );
 }

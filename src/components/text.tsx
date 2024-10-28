@@ -47,12 +47,12 @@ export const Text = ({
       );
     case "subheading":
       return (
-        <h4
+        <p
           {...props}
           className={`text-small sm:text-xl leading-small text-secondary font-medium ${className}`}
         >
           {children}
-        </h4>
+        </p>
       );
     case "description":
       return (

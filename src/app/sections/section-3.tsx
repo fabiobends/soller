@@ -10,14 +10,14 @@ export function Section3() {
           alt=""
           height={1001}
           width={574}
-          priority
+          loading="lazy"
         />
         <Image
           src="/assets/images/mobile-app-1.svg"
           alt="Mobile app"
           height={950}
           width={460}
-          priority
+          loading="lazy"
           className="absolute w-9/12 sm:w-8/12 md:w-11/12 lg:left-20"
         />
       </div>
