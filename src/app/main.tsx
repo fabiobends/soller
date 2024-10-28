@@ -7,7 +7,7 @@ import { Section6 } from "@/app/sections/section-6";
 
 export function Main() {
   return (
-    <main className="min-h-screen">
+    <main>
       <Section1 />
       <Section2 />
       <Section3 />

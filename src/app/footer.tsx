@@ -4,7 +4,7 @@ import { Text } from "@/components/text";
 
 export function Footer() {
   return (
-    <footer className="flex flex-col sm:flex-row items-center justify-between px-4 sm:px-20 py-6 sm:py-8 gap-6 sm:gap-0">
+    <footer className="flex flex-col md:flex-row items-center justify-between px-4 sm:px-20 py-6 sm:py-8 gap-6 md:gap-0">
       <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-4">
         <Link className="flex items-center gap-2" href="#">
           <Image

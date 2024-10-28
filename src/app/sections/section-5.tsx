@@ -44,7 +44,7 @@ const items: CardItem[] = [
 export function Section5() {
   return (
     <section className="bg-primary flex flex-col gap-20 py-12 sm:py-20">
-      <div className=" flex flex-col sm:flex-row items-center sm:items-start justify-between px-4 sm:px-20">
+      <div className=" flex flex-col lg:flex-row items-center sm:items-start justify-between px-4 sm:px-20">
         <div className="flex flex-col justify-between text-center sm:text-start max-w-[814px]">
           <Text variant="subheading" className="text-tertiary">
             Join other Sun harvesters

@@ -9,14 +9,14 @@ export function Section2() {
         alt="Yellow Circle"
         width={710}
         height={710}
-        className="absolute w-4/12 sm:w-3/12 -left-12 sm:left-0 bottom-40 -z-10"
+        className="absolute w-4/12 sm:w-3/12 left-0 bottom-36 md:bottom-56 xl:bottom-96 -z-10"
       />
       <Image
         src="/assets/images/purple-circle.svg"
         alt="Purple Circle"
         width={596}
         height={596}
-        className="absolute w-4/12 sm:w-3/12 -right-12 sm:right-0 bottom-40 -z-10"
+        className="absolute w-4/12 sm:w-3/12 right-0 bottom-36 md:bottom-56 xl:bottom-96 -z-10"
       />
       <div className="text-center max-w-[900px] mx-auto">
         <Text variant="subheading">No more waste</Text>

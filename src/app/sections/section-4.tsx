@@ -3,8 +3,8 @@ import { Text } from "@/components/text";
 
 export function Section4() {
   return (
-    <section className="relative py-12 sm:p-20 sm:pr-0 flex flex-col sm:flex-row gap-16">
-      <div className="flex-1 px-4 sm:px-0 flex text-center sm:text-start flex-col gap-16 sm:gap-12">
+    <section className="relative py-12 sm:py-20 md:p-20 md:pr-0 flex flex-col items-center md:items-start md:flex-row lg:gap-16 gap-6">
+      <div className="flex-1 px-4 sm:px-20 md:px-0 flex text-center sm:text-start flex-col gap-16 sm:gap-12">
         <div>
           <Text variant="subheading">System features</Text>
           <Text variant="heading" className="mt-2 mb-6">
@@ -47,7 +47,7 @@ export function Section4() {
           </div>
         </div>
       </div>
-      <div className="sm:w-4/12 w-full relative flex items-center justify-center">
+      <div className="w-full md:w-4/12 relative flex items-center justify-center">
         <Image
           src="/assets/images/yellow-deformed-rectangle.svg"
           alt=""
@@ -61,7 +61,7 @@ export function Section4() {
           height={950}
           width={460}
           priority
-          className="absolute w-11/12 right-0 sm:right-8"
+          className="absolute w-9/12 sm:w-8/12 md:w-11/12 right-8"
         />
       </div>
     </section>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Header() {
   return (
-    <nav className="absolute sm:relative flex items-center justify-between gap-4 sm:py-8 pt-4 sm:px-20 px-4">
+    <nav className="absolute md:relative flex items-center justify-between gap-4 sm:py-8 pt-4 sm:px-20 px-4">
       <div className="flex gap-10 items-center">
         <p className="text-[2rem] leading-small font-bold">soller</p>
         <ul className="hidden sm:flex items-center gap-4">
@@ -22,21 +22,22 @@ export function Header() {
           </li>
         </ul>
       </div>
-      <ul className="hidden sm:flex items-center gap-2">
-        <Image
-          src="/assets/icons/headset.svg"
-          height={24}
-          width={24}
-          alt="Headset"
-        />
-        <li>
-          <Text variant="small" className="leading-[1.5] text-light-blue">
+      <ul className="flex items-center gap-4">
+        <div className="hidden md:flex items-center px-2 py-3">
+          <Image
+            src="/assets/icons/headset.svg"
+            height={24}
+            width={24}
+            alt="Headset"
+          />
+          <Text
+            variant="small"
+            className="leading-[1.5] w-[127px] text-center text-light-blue"
+          >
             555 818 282
           </Text>
-        </li>
-        <li className="ml-6">
-          <CtaButton title="Request a Quote" />
-        </li>
+        </div>
+        <CtaButton title="Request a Quote" className="hidden lg:flex" />
       </ul>
     </nav>
   );
