@@ -33,6 +33,10 @@ const config: Config = {
       },
     },
   },
+  variants: {
+    fill: ["hover", "focus"],
+    stroke: ["hover", "focus"],
+  },
   plugins: [],
 };
 export default config;

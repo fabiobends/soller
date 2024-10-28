@@ -17,19 +17,21 @@ export function Carrousel({ items, ...props }: CarrouselProps) {
 
   const onClickGoForward = () => {
     setData((prev) => {
-      const firstElement = prev.shift();
+      const newData = [...prev];
+      const firstElement = newData.shift();
       if (!firstElement) return prev;
-      prev.push(firstElement);
-      return prev.slice();
+      newData.push(firstElement);
+      return newData;
     });
   };
 
   const onClickGoBack = () => {
     setData((prev) => {
-      const lastElement = prev.pop();
+      const newData = [...prev];
+      const lastElement = newData.pop();
       if (!lastElement) return prev;
-      prev.unshift(lastElement);
-      return prev.slice();
+      newData.unshift(lastElement);
+      return newData;
     });
   };
 
@@ -41,13 +43,17 @@ export function Carrousel({ items, ...props }: CarrouselProps) {
       <div className="grid grid-rows-1 overflow-x-hidden pl-8 sm:pl-20">
         <div className="flex items-center gap-6">
           {data.map((item, index) => (
-            <Card key={item.id} {...item} isExpanded={index === 0} />
+            <Card
+              key={`${item.id}-${index}`}
+              {...item}
+              isExpanded={index === 0}
+            />
           ))}
         </div>
       </div>
       <div className="flex items-center justify-center sm:justify-start gap-6 sm:pl-20">
         <button
-          className="p-3 color-tertiary border-2 rounded-full border-tertiary"
+          className="p-3 color-tertiary border-2 rounded-full border-tertiary hover:brightness-75"
           onClick={onClickGoBack}
         >
           <Image
@@ -57,7 +63,7 @@ export function Carrousel({ items, ...props }: CarrouselProps) {
           />
         </button>
         <button
-          className="p-3 color-tertiary border-2 rounded-full border-tertiary"
+          className="p-3 color-tertiary border-2 rounded-full border-tertiary hover:brightness-75"
           onClick={onClickGoForward}
         >
           <Image

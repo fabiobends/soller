@@ -1,12 +1,15 @@
 import { CtaButton } from "@/components/cta-button";
 import { Text } from "@/components/text";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Header() {
   return (
     <nav className="absolute md:relative flex items-center justify-between gap-4 sm:py-8 pt-4 sm:px-20 px-4">
       <div className="flex gap-10 items-center">
-        <p className="text-[2rem] leading-small font-bold">soller</p>
+        <Link href="#">
+          <p className="text-[2rem] leading-small font-bold">soller</p>
+        </Link>
         <ul className="hidden sm:flex items-center gap-4">
           <li>
             <Text variant="small">Products</Text>
