@@ -31,7 +31,7 @@ export function Section6() {
               All the power that you need for your house is now available
             </Text>
           </div>
-          <div className="flex flex-col self-start items-center gap-4">
+          <div className="flex flex-col sm:self-start items-center gap-4">
             <CtaButton
               title="Request a Quote"
               className="mt-6 sm:mt-10"
