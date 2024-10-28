@@ -1,7 +1,10 @@
 import Image from "next/image";
 import { Text } from "@/components/text";
+import { getTranslations } from "next-intl/server";
 
-export function Section2() {
+export async function Section2() {
+  const t = await getTranslations("main.section2");
+
   return (
     <section className="relative flex flex-col items-center px-4 py-12 sm:p-20">
       <Image
@@ -19,15 +22,11 @@ export function Section2() {
         className="absolute w-4/12 sm:w-3/12 right-0 bottom-36 md:bottom-56 xl:bottom-96 -z-10"
       />
       <div className="text-center max-w-[900px] mx-auto">
-        <Text variant="subheading">No more waste</Text>
+        <Text variant="subheading">{t("subheading")}</Text>
         <Text variant="heading" className="mt-2 mb-6">
-          Pick the Sun
+          {t("heading")}
         </Text>
-        <Text variant="description">
-          Et pulvinar nec interdum integer id urna molestie porta nullam. A,
-          donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor
-          pharetra sed in mauris elementum sollicitudin.
-        </Text>
+        <Text variant="description">{t("description")}</Text>
       </div>
       <Image
         src="/assets/images/desktop.svg"

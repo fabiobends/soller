@@ -1,18 +1,19 @@
 import Image from "next/image";
 import { Text } from "@/components/text";
 import { CtaButton } from "@/components/cta-button";
+import { getTranslations } from "next-intl/server";
 
-export function Section1() {
+export async function Section1() {
+  const t = await getTranslations("main.section1");
+  const tGlobal = await getTranslations("global");
+
   return (
     <section className="flex flex-col-reverse lg:flex-row relative pb-12 sm:pb-16">
       <div className="flex flex-col sm:gap-32 gap-16 w-full items-stretch max-w-[600px] sm:pl-20 md:pl-0 md:ml-20 pt-12 md:pt-0 lg:pt-7 px-4 sm:px-0">
         <div className="flex flex-col gap-6 items-center text-center sm:text-start sm:items-start">
-          <Text variant="headline">Get the Sun to Power Your Home</Text>
-          <Text variant="intro">
-            Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra
-            orci dui consequat turpis scelerisque.
-          </Text>
-          <CtaButton title="Request a Quote" />
+          <Text variant="headline">{t("headline")}</Text>
+          <Text variant="intro">{t("intro")}</Text>
+          <CtaButton title={tGlobal("cta")} />
         </div>
         <div className="flex flex-col gap-4">
           <Text>

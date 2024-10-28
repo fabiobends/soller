@@ -2,6 +2,7 @@ import { CardItem } from "@/components/card";
 import { Carrousel } from "@/components/carrousel";
 import { CtaButton } from "@/components/cta-button";
 import { Text } from "@/components/text";
+import { getTranslations } from "next-intl/server";
 
 const items: CardItem[] = [
   {
@@ -41,21 +42,21 @@ const items: CardItem[] = [
   },
 ];
 
-export function Section5() {
+export async function Section5() {
+  const t = await getTranslations("main.section5");
+
   return (
     <section className="bg-primary flex flex-col gap-20 py-12 sm:py-20">
       <div className=" flex flex-col lg:flex-row items-center sm:items-start justify-between px-4 sm:px-20">
         <div className="flex flex-col justify-between text-center sm:text-start max-w-[814px]">
           <Text variant="subheading" className="text-tertiary">
-            Join other Sun harvesters
+            {t("subheading")}
           </Text>
           <Text variant="heading" className="mt-2 mb-6 text-white">
-            Make something awesome
+            {t("heading")}
           </Text>
           <Text variant="description" className="text-white">
-            Dui euismod iaculis libero, aliquet vitae et elementum porttitor.
-            Eleifend mi tristique condimentum congue fusce nunc, donec magnis
-            commodo.
+            {t("description")}
           </Text>
         </div>
         <CtaButton

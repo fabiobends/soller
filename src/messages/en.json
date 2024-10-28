@@ -1,0 +1,69 @@
+{
+  "global": {
+    "logo": "soller",
+    "cta": "Request a Quote"
+  },
+  "header": {
+    "products": "Products",
+    "solutions": "Solutions",
+    "services": "Services",
+    "configure": "Configure"
+  },
+  "main": {
+    "section1": {
+      "headline": "Get the Sun to Power Your Home",
+      "intro": "Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque."
+    },
+    "section2": {
+      "subheading": "No more waste",
+      "heading": "Pick the Sun",
+      "description": "Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin."
+    },
+    "section3": {
+      "subheading": "Services",
+      "heading": "Personalized services",
+      "description": "Pretium lectus ultrices sit tempor, sit ullamcorper volutpat et et. Auctor turpis semper id sit ornare maecenas lectus sed.",
+      "topics": {
+        "topic1": "Et mauris",
+        "description1": "Posuere quis sed mauris non curabitur pretium elementum eget. Feugiat sed maecenas eu accumsan tristique.",
+        "topic2": "Eget sit",
+        "description2": "Sit bibendum donec dolor fames neque vulputate non sit aliquam. Consequat turpis natoque leo, massa.",
+        "topic3": "Imperdiet pellentesque",
+        "description3": "Platea arcu dapibus non magna cursus lectus id sollicitudin. Enim viverra parturient tristique nulla.",
+        "topic4": "Non libero",
+        "description4": "Platea arcu dapibus non magna cursus lectus id sollicitudin. Enim viverra parturient tristique nulla."
+      }
+    },
+    "section4": {
+      "subheading": "System features",
+      "heading": "Powerful features",
+      "description": "Pretium lectus ultrices sit tempor, sit ullamcorper volutpat et et. Auctor turpis semper id sit ornare maecenas lectus sed.",
+      "topics": {
+        "topic1": "Erat sit",
+        "description1": "Id quis lectus pharetra, ultricies integer montes, amet, gravida consectetur. Nunc convallis fringilla nisl magna sagittis.",
+        "topic2": "Ullamcorper arcu",
+        "description2": "Ipsum at id hendrerit amet faucibus commodo quam nullam. Lectus auctor habitant duis dictum.",
+        "topic3": "Et pellentesque",
+        "description3": "Mi vitae, massa eu molestie massa euismod volutpat condimentum. Blandit molestie ullamcorper hendrerit purus lorem vulputate.",
+        "topic4": "Amet egestas",
+        "description4": "Elementum, libero, lacus, vel ullamcorper at velit id. Malesuada velit et, ullamcorper malesuada amet, felis."
+      }
+    },
+    "section5": {
+      "subheading": "Join other Sun harvesters",
+      "heading": "Make something awesome",
+      "description": "Dui euismod iaculis libero, aliquet vitae et elementum porttitor. Eleifend mi tristique condimentum congue fusce nunc, donec magnis commodo."
+    },
+    "section6": {
+      "subheading": "Get the Sun to power your home",
+      "heading": "All the power that you need for your house is now available",
+      "description": "Egestas fringilia aliquam leo"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "terms": "Terms",
+    "privacy": "Privacy",
+    "cookies": "Cookies"
+  }
+}

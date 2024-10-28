@@ -1,8 +1,12 @@
 import Image from "next/image";
 import { CtaButton } from "@/components/cta-button";
 import { Text } from "@/components/text";
+import { getTranslations } from "next-intl/server";
 
-export function Section6() {
+export async function Section6() {
+  const t = await getTranslations("main.section6");
+  const tGlobal = await getTranslations("global");
+
   return (
     <section className="bg-light-purple relative">
       <Image
@@ -25,19 +29,19 @@ export function Section6() {
         <div className="px-4 sm:px-20 flex flex-col lg:flex-row w-full justify-between text-center sm:text-start z-10">
           <div className="max-w-[894px]">
             <Text variant="subheading" className="text-tertiary">
-              Get the Sun to power your home
+              {t("subheading")}
             </Text>
             <Text variant="heading" className="text-white mt-2">
-              All the power that you need for your house is now available
+              {t("heading")}
             </Text>
           </div>
           <div className="flex flex-col sm:self-start items-center gap-4">
             <CtaButton
-              title="Request a Quote"
+              title={tGlobal("cta")}
               className="mt-6 sm:mt-10"
               color="yellow"
             />
-            <Text className="text-white">Egestas fringilia aliquam leo</Text>
+            <Text className="text-white">{t("description")}</Text>
           </div>
         </div>
         <Image
