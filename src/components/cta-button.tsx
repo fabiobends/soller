@@ -26,7 +26,7 @@ const ArrowRightIcon = forwardRef<SVGSVGElement, ArrowRightIconProps>(
         <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" strokeWidth="1.5" />
       </svg>
     );
-  }
+  },
 );
 
 ArrowRightIcon.displayName = "ArrowRightIcon";

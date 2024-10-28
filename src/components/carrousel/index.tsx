@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { Card, CardItem } from "./card";
+import { Card, CardItem } from "../card";
 
 interface CarrouselProps extends React.HTMLAttributes<HTMLDivElement> {
   items: CardItem[];
@@ -55,6 +55,7 @@ export function Carrousel({ items, ...props }: CarrouselProps) {
         <button
           className="p-3 color-tertiary border-2 rounded-full border-tertiary hover:brightness-75"
           onClick={onClickGoBack}
+          data-testid="previous"
         >
           <Image
             src="/assets/icons/arrow-left-yellow.svg"
@@ -65,6 +66,7 @@ export function Carrousel({ items, ...props }: CarrouselProps) {
         <button
           className="p-3 color-tertiary border-2 rounded-full border-tertiary hover:brightness-75"
           onClick={onClickGoForward}
+          data-testid="next"
         >
           <Image
             src="/assets/icons/arrow-right-yellow.svg"

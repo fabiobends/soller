@@ -22,7 +22,7 @@ export function Card({
 }: CardProps) {
   return (
     <div
-      className={`transition px-8 w-[358px] sm:[364px] bg-white rounded-[10px] shadow-normal flex flex-col justify-end gap-8 ${
+      className={`transition px-8 w-[358px] sm:w-[364px] bg-white rounded-[10px] shadow-normal flex flex-col justify-end gap-8 ${
         isExpanded
           ? "h-[359px] sm:h-[490px] pb-8 sm:pb-14"
           : "h-[311px] sm:h-[442px] pb-8"
