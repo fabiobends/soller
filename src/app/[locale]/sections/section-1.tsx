@@ -37,7 +37,7 @@ export async function Section1() {
       </div>
       <div className="relative xl:absolute flex justify-end w-full md:-top-32 -z-10 mb-7 md:-mb-32 lg:mb-0">
         <Image
-          src="/assets/images/solar-pv-installer.svg"
+          src="/assets/images/solar-pv-installer.webp"
           alt="Solar PV Installer"
           width={673}
           height={694}

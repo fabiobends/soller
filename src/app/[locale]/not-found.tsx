@@ -12,7 +12,7 @@ export default async function NotFound() {
     <Container>
       <div className="flex flex-col items-center justify-start gap-8 h-screen text-center">
         <Image
-          src="/assets/images/solar-pv-installer.svg"
+          src="/assets/images/solar-pv-installer.webp"
           alt="Solar PV Installer"
           width={673}
           height={694}
